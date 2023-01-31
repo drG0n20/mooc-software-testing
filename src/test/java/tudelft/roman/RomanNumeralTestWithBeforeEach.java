@@ -15,8 +15,8 @@ public class RomanNumeralTestWithBeforeEach {
 
     @Test
     public void singleNumber() {
-        int result = roman.convert("I");
-        Assertions.assertEquals(1, result);
+        int result = roman.convert("IIIII");
+        Assertions.assertEquals(5, result);
     }
 
     @Test
@@ -27,8 +27,8 @@ public class RomanNumeralTestWithBeforeEach {
 
     @Test
     public void numberWithSubtractiveNotation() {
-        int result = roman.convert("IV");
-        Assertions.assertEquals(4, result);
+        int result = roman.convert("IIIIV");
+        Assertions.assertEquals(7, result);
     }
 
     @Test
