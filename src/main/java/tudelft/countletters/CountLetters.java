@@ -10,11 +10,10 @@ public class CountLetters {
                     (last == 'r' || last == 's')) {
                 words++;
             }
-
             last = str.charAt(i);
         }
+        if(last == 'r' || last == 's')
 
-        if(last == 'x' || last == 's')
             words++;
 
         return words;
